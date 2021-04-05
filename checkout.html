@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <title>Checkout</title>  
+
+        <meta name="keywords" content="Checkout" />
+        <meta name="description" content="Checkout">
+        
+<link rel="canonical" href="https://www.magnumvpn.com/checkout.html"/>
+        <meta name="author" content="MagnumVPN">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="How to set up L2TP VPN on Windows 10">
+
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Web Fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+        <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="/css/theme.css">
+        <link rel="stylesheet" href="/css/theme-elements.css">
+        <link rel="stylesheet" href="/css/theme-blog.css">
+        <link rel="stylesheet" href="/css/theme-shop.css">
+
+        <!-- Current Page CSS -->
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+        <link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css">
+
+
+        <!-- Skin CSS -->
+        <link rel="stylesheet" href="/css/skins/default.css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="/css/custom.css">
+
+        <!-- Head Libs -->
+        <script src="/vendor/modernizr/modernizr.min.js"></script>
+
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//stats.magnumvpn.com/";
+            _paq.push(['setTrackerUrl', u+'js/']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+    </head>
+    <body>
+        <div class="body">
+            <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+                <div class="header-body">
+                    <div class="header-container container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-logo">
+                                    <a href="https://www.magnumvpn.com/index.html">
+                                        <img alt="Porto" width="112" height="80" data-sticky-width="83" data-sticky-height="59" data-sticky-top="33" src="/img/logos/png/dark_logo_transparent_background_biggerTag_small.png">
+                                        <!-- <img alt="Porto" width="263" height="188" data-sticky-width="131" data-sticky-height="94" data-sticky-top="33" src=""> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <!--
+                                    <div class="header-search hidden-xs">
+                                        <form id="searchForm" action="page-search-results.html" method="get">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    -->
+                                    <nav class="header-nav-top">
+                                        <ul class="nav nav-pills">
+                                            <li class="hidden-xs">
+                                                <a href="/aboutus.html"><i class="fa fa-angle-right"></i> About Us</a>
+                                            </li>
+                                            <li class="hidden-xs">
+                                                <a href="/contact-us.html"><i class="fa fa-angle-right"></i> Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <span class="ws-nowrap"><i class="fa fa-phone"></i><a href="tel:+14808004763"> (480) 800-4763</a></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-row">
+                                    <div class="header-nav">
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <ul class="header-social-icons social-icons hidden-xs">
+                                            <!-- <li class="social-icons-facebook"><a href="https://www.facebook.com/MagnumVPN/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                            <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <!-- <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/prompt-engineering-usa" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                                        </ul>
+                                        <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                                            <nav>
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/index.html">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/checkout.html"> <!-- <a href="https://vpn.ac/aff.php?aff=933"> -->
+                                                            Pricing
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="https://vpn.ac/aff.php?aff=933">
+                                                            FAQs
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/why-do-i-need-a-vpn.html">Why do I Need a VPN?</a></li>
+                                                            <li><a href="/how-to-view-cookies-in-chrome.html">How to View Cookies in Chrome?</a></li>
+                                                            <li><a href="/vpn-providers.html">10 criteria to choose a VPN Provider</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://vpn.ac/aff.php?aff=933">
+                                                            Support
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/powershell_auto_connect_vpn.html">Powershell VPN Auto Connect</a></li>
+                                                            <li><a href="/setup-vpn-android-l2tp-ipsec.html">Android 7.0 L2TP VPN Setup</a></li>
+                                                            <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP VPN Setup</a></li>
+                                                            <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- <li class="dropdown dropdown-mega">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <div class="dropdown-mega-content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Windows</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP Setup</a></li>
+                                                                                <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 2</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-buttons.html">Buttons</a></li>
+                                                                                <li><a href="shortcodes-labels.html">Labels</a></li>
+                                                                                <li><a href="shortcodes-lists.html">Lists</a></li>
+                                                                                <li><a href="shortcodes-image-gallery.html">Image Gallery</a></li>
+                                                                                <li><a href="shortcodes-image-frames.html">Image Frames</a></li>
+                                                                                <li><a href="shortcodes-testimonials.html">Testimonials</a></li>
+                                                                                <li><a href="shortcodes-blockquotes.html">Blockquotes</a></li>
+                                                                                <li><a href="shortcodes-word-rotator.html">Word Rotator</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 3</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-call-to-action.html">Call to Action</a></li>
+                                                                                <li><a href="shortcodes-pricing-tables.html">Pricing Tables</a></li>
+                                                                                <li><a href="shortcodes-tables.html">Tables</a></li>
+                                                                                <li><a href="shortcodes-progressbars.html">Progress Bars</a></li>
+                                                                                <li><a href="shortcodes-counters.html">Counters</a></li>
+                                                                                <li><a href="shortcodes-sections-parallax.html">Sections &amp; Parallax</a></li>
+                                                                                <li><a href="shortcodes-tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+                                                                                <li><a href="shortcodes-sticky-elements.html">Sticky Elements</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 4</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-headings.html">Headings</a></li>
+                                                                                <li><a href="shortcodes-dividers.html">Dividers</a></li>
+                                                                                <li><a href="shortcodes-animations.html">Animations</a></li>
+                                                                                <li><a href="shortcodes-medias.html">Medias</a></li>
+                                                                                <li><a href="shortcodes-maps.html">Maps</a></li>
+                                                                                <li><a href="shortcodes-arrows.html">Arrows</a></li>
+                                                                                <li><a href="shortcodes-alerts.html">Alerts</a></li>
+                                                                                <li><a href="shortcodes-posts.html">Posts</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    -->
+                                                    <li class="">
+                                                        <a class="" href="https://vpn.ac/aff.php?aff=933">
+                                                            VPN.ac login
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/checkout.html"> <!-- <a class="" href="https://vpn.ac/aff.php?aff=933"> -->
+                                                            Buy Now
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div role="main" class="main shop">
+
+                <section class="section section-no-border section-light custom-checkout-title-padding mb-none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="font-weight-bold text-color-primary mb-none">Pricing</h2>
+                                <h4 class="font-weight-bold text-color-quaternary">Protect your privacy with a top tier performance VPN
+                                </h4>
+                                <ul class="list-unstyled fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>No activity logs</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>6 simultaneous connections</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>VPN Software for Windows, Mac, iOS and Android</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>106 servers across 21 countries</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>30 day money back guarantee</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Stream tv shows without geo-blocks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section-quaternary section-center section-no-border m-none section-text-light">
+                    <div class="container">
+                        <div class="row">
+                            <h3 class="font-weight-bold">Select a Plan</h3>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0 appear-animation plans" data-appear-animation="fadeIn" data-appear-animation-delay="0">
+                                <span class="thumb-info custom-thumb-info-2">
+                                    <span class="thumb-info-caption background-color-light center p-xlg">
+                                        <h4 class="font-weight-bold text-color-quaternary custom-font-style-1">Monthly</h4>
+                                        <div class="font-weight-bold text-color-primary custom-font-style-2">$6.95 / month</div>
+                                        <ul class="list custom-pricing-list list-primary list-borders list-center-but-left">
+                                            <li>Unlimited Use</li>
+                                            <li>All Protocols</li>
+                                            <li>Pay month to month</li>
+                                        </ul>
+                                        <br/>
+                                        <span class="checkselection hidecheckselection" data-line-amount="$6.95" data-line-name="VPN Monthly" data-line-qty="1" data-line-total="$6.95"><i class="fa fa-check check-selected"></i></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0 custom-sm-margin-1 custom-xs-margin-2 appear-animation plans borderhighlight" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                <span class="thumb-info custom-thumb-info-2">
+                                    <span class="thumb-info-caption background-color-light center p-xlg">
+                                        <h4 class="font-weight-bold text-color-quaternary custom-font-style-1">Yearly</h4>
+                                        <div class="font-weight-bold text-color-primary custom-font-style-2">$4.95 / month</div>
+                                        <ul class="list custom-pricing-list list-primary list-borders list-center-but-left">
+                                            <li>Unlimited Use</li>
+                                            <li>All Protocols</li>
+                                            <li>Save 29%</li>
+                                        </ul>
+                                        <br/>
+                                        <span class="checkselection showcheckselection" data-line-amount="$4.95" data-line-name="VPN Yearly" data-line-qty="12" data-line-total="$59.40"><i class="fa fa-check check-selected"></i></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0 custom-sm-margin-1 custom-xs-margin-2 appear-animation plans" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+                                <span class="thumb-info custom-thumb-info-2">
+                                    <span class="thumb-info-caption background-color-light center p-xlg">
+                                        <h4 class="font-weight-bold text-color-quaternary custom-font-style-1">6 Month</h4>
+                                        <div class="font-weight-bold text-color-primary custom-font-style-2">$5.95 / month</div>
+                                        <ul class="list custom-pricing-list list-primary list-borders list-center-but-left">
+                                            <li>Unlimited Use</li>
+                                            <li>All Protocols</li>
+                                            <li>Save 14%</li>
+                                        </ul>
+                                        <br/>
+                                        <span class="checkselection hidecheckselection" data-line-amount="$5.95" data-line-name="VPN 6 Months" data-line-qty="6" data-line-total="$35.70"><i class="fa fa-check check-selected"></i></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-no-border m-none">
+                    <div class="container">
+                        <div class="row">
+                            <h3 class="font-weight-bold">Enter Email</h3>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <label>Email </label>
+                                    <input type="text" value="" class="form-control" placeholder="yourname@example.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section-quaternary section-center section-no-border m-none section-text-light">
+                    <div class="container">
+                        <div class="row">
+                            <h3 class="font-weight-bold">Review and Payment</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8 background-color-light">
+                            <table class="shop_table cart">
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">
+                                            Product
+                                        </th>
+                                        <th class="product-price">
+                                            Price
+                                        </th>
+                                        <th class="product-quantity">
+                                            Quantity
+                                        </th>
+                                        <th class="product-subtotal">
+                                            Total
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_table_item">
+                                        <td class="product-name">
+                                            <span class="text-color-primary" id="linename">VPN Yearly</span>
+                                        </td>
+                                        <td class="product-price">
+                                            <span class="amount" id="lineamount">$4.95</span>
+                                        </td>
+                                        <td class="product-quantity" id="lineqty">12
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span class="amount" id="linetotal">$59.40</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        <hr class="tall">
+                        <div class="row">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-2">
+                                
+                                            <h4 class="">Payment</h4>
+
+                                            <form action="#" id="frmPayment" name="frmPayment" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12 radioLeft">
+                                                        <span class="remember-box ">
+                                                            <label>
+                                                                <input type="radio" checked="checked" id="payment" name="payment">&nbsp;<i class="fa fa-credit-card"></i>&nbsp;Credit Card
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 radioLeft">
+                                                        <span class="remember-box ">
+                                                            <label>
+                                                                <input type="radio" id="payment" name="payment">&nbsp;<i class="fa fa-paypal">&nbsp;</i>PayPal
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 radioLeft">
+                                                        <span class="remember-box">
+                                                            <label>
+                                                                <input type="radio" id="payment" name="payment">&nbsp;<i class="fa fa-apple-pay">&nbsp;</i>Apple Pay
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 radioLeft">
+                                                    <input type="submit" value="Place Order" name="proceed" class="btn btn-lg btn-primary mt-xl" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    </div>
+                                                </div>
+                                            </form>
+
+
+                            </div>
+                            <div class="col-md-5"></div>
+
+                        </div>
+                    </div>
+                </section>         
+            </div>
+            <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        There has been an error placing the order, nothing has been charged.  Our systems are under maintenance we apologize for this inconvenience.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-ribbon">
+                            <span>Get in Touch</span>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="newsletter">
+                                <h4>Newsletter</h4>
+                                <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+            
+                                <div class="alert alert-success hidden" id="newsletterSuccess">
+                                    <strong>Success!</strong> You've been added to our email list.
+                                </div>
+            
+                                <div class="alert alert-danger hidden" id="newsletterError"></div>
+            
+                                <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">Go!</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Latest News</h4>
+                            <div id="tweet" class="twitter manual" data-plugin-tweets data-plugin-options="{'username': '', 'count': 2}">
+                                <a class="twitter-timeline" data-height="400" data-theme="dark" href="http://twitter.com/MagnumVPN">Tweets by MagnumVPN</a> 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-details">
+                                <h4>Contact Us</h4>
+                                <ul class="contact">
+                                    <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Arizona, USA</p></li>
+                                    <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <a href="tel:+14808004763">(480) 800-4763</a></p></li>
+                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:sales@magnumvpn.com">sales@magnumvpn.com</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Follow Us</h4>
+                            <ul class="social-icons">
+                                <!-- <li class="social-icons-facebook"><a href="https://www.facebook.com/MagnumVPN/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <!-- <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="https://www.magnumvpn.com/index.html" class="logo">
+                                    <img alt="MagnumVPN Logo"  src="/img/logos/png/white_logo_color_background_centercut_very_small_060606.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <nav id="sub-menu">
+                                    <ul>
+                                        <li><a href="https://vpn.ac/aff.php?aff=933">FAQ's</a></li>
+                                        <li><a href="https://www.magnumvpn.com/sitemap.html">Sitemap</a></li>
+                                        <li><a href="https://www.magnumvpn.com/contact-us.html">Contact</a></li>
+                                        <li><a href="https://www.magnumvpn.com/privacy_policy.html">Privacy Policy</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>        </div>
+
+        <!-- Vendor -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/vendor/common/common.min.js"></script>
+        <script src="/vendor/jquery.validation/jquery.validation.min.js"></script>
+        <script src="/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+        <!-- <script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script> -->
+        <script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+        <script src="/vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="/vendor/vide/vide.min.js"></script>
+        
+        <!-- Theme Base, Components and Settings -->
+        <script src="/js/theme.js"></script>
+        
+        <!-- Current Page Vendor and Views -->
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+        <script src="/js/views/view.home.js"></script>
+        
+        <!-- Theme Custom -->
+        <!--<script src="/js/custom.js"></script>-->
+        
+        <!-- Theme Initialization Files -->
+        <script src="/js/theme.init.js"></script>
+
+<script>
+$( document ).ready(function() {    
+    $('.plans').click(function() { 
+        
+        $('.plans').removeClass("borderhighlight");
+        $('.checkselection').addClass("hidecheckselection");
+        $('.checkselection').removeClass("showcheckselection");
+        // this border from other  image   
+        $(this).addClass("borderhighlight");
+        $(this).find('.checkselection').removeClass("hidecheckselection");
+        $(this).find('.checkselection').addClass("showcheckselection");
+        $('#linename').text($(this).find('.checkselection').data("lineName"));
+        $('#lineamount').text($(this).find('.checkselection').data("lineAmount"));
+        $('#lineqty').text($(this).find('.checkselection').data("lineQty"));
+        $('#linetotal').text($(this).find('.checkselection').data("lineTotal"));
+    });
+
+    $("#frmPayment").submit(function(e){
+        e.preventDefault(e);
+        $('#exampleModalCenter').modal('show');
+        _paq.push(['trackGoal', 1, $('#linetotal').text().replace("$", "")]);
+    });
+    
+});
+// add border to clicked image });
+</script>
+
+
+    </body>
+</html>

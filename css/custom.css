@@ -1,0 +1,112 @@
+/* Add here all your CSS customizations */
+.isso-comment > div.avatar > svg,
+.isso-postbox > .avatar > svg {
+    max-width: 48px;
+    max-height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+.isso-postbox > .form-wrapper .textarea {
+    margin: 0 0 .3em;
+    padding: .4em .8em;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 10em;
+    overflow: auto;
+    resize: both;    
+}
+
+.isso-comment > div.text-wrapper > .isso-comment-footer > a {
+    position: relative;
+    top: .2em;
+}
+.isso-comment > div.text-wrapper > .isso-comment-footer > a + a {
+    padding-left: 1em;
+}
+
+code {
+    background: #f0f0f0;
+
+}
+code {
+    font-family: 'Consolas', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.015em;
+    line-height: 120%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    display: block;
+    white-space: pre;
+}
+code {
+    overflow: scroll;
+}
+
+.post-content > ol > li
+{
+    padding : 3em 0 0 0;
+} 
+
+
+section.custom-checkout-title-padding {
+    padding-top: 0px;
+}
+
+h4.custom-font-style-1 {
+    line-height: 55px;
+}
+
+.borderhighlight {
+
+    /*outline: 4px dashed #f1592a ; */
+    border: 4px solid #f58422;
+
+    padding-right: 0px;
+    padding-left: 0px;
+
+
+}
+
+ul.list-center-but-left {
+    text-align: left;
+    display: inline-block;
+}
+
+.plan-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.showcheckselection {
+    visibility: visible;
+}
+
+.hidecheckselection {
+    visibility: hidden;
+}
+
+.check-selected {
+    color: #f58422;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 2.5em;
+}
+
+.radioLeft {
+    text-align: left;
+    color: white;
+    padding-left: 30px;
+}
+
+#header .header-container {
+        background-image: url("/img/yoga/png/2nd-top-header_02.png");
+}

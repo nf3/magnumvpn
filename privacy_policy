@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <title>Contact Us</title>  
+
+        <meta name="keywords" content="Contact Us" />
+        <meta name="description" content="Contact Us">
+        
+<link rel="canonical" href="https://www.magnumvpn.com/contact-us.html"/>
+        <meta name="author" content="MagnumVPN">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="How to set up L2TP VPN on Windows 10">
+
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Web Fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+        <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="/css/theme.css">
+        <link rel="stylesheet" href="/css/theme-elements.css">
+        <link rel="stylesheet" href="/css/theme-blog.css">
+        <link rel="stylesheet" href="/css/theme-shop.css">
+
+        <!-- Current Page CSS -->
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+        <link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css">
+
+
+        <!-- Skin CSS -->
+        <link rel="stylesheet" href="/css/skins/default.css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="/css/custom.css">
+
+        <!-- Head Libs -->
+        <script src="/vendor/modernizr/modernizr.min.js"></script>
+
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//stats.magnumvpn.com/";
+            _paq.push(['setTrackerUrl', u+'js/']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+    </head>
+    <body>
+        <div class="body">
+            <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+                <div class="header-body">
+                    <div class="header-container container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-logo">
+                                    <a href="https://www.magnumvpn.com/index.html">
+                                        <img alt="Porto" width="112" height="80" data-sticky-width="83" data-sticky-height="59" data-sticky-top="33" src="/img/logos/png/dark_logo_transparent_background_biggerTag_small.png">
+                                        <!-- <img alt="Porto" width="263" height="188" data-sticky-width="131" data-sticky-height="94" data-sticky-top="33" src=""> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <!--
+                                    <div class="header-search hidden-xs">
+                                        <form id="searchForm" action="page-search-results.html" method="get">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    -->
+                                    <nav class="header-nav-top">
+                                        <ul class="nav nav-pills">
+                                            <li class="hidden-xs">
+                                                <a href="/aboutus.html"><i class="fa fa-angle-right"></i> About Us</a>
+                                            </li>
+                                            <li class="hidden-xs">
+                                                <a href="/contact-us.html"><i class="fa fa-angle-right"></i> Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <span class="ws-nowrap"><i class="fa fa-phone"></i><a href="tel:+14808004763"> (480) 800-4763</a></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-row">
+                                    <div class="header-nav">
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <ul class="header-social-icons social-icons hidden-xs">
+                                            <!-- <li class="social-icons-facebook"><a href="http://facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                            <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <!-- <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/prompt-engineering-usa" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                                        </ul>
+                                        <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                                            <nav>
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="">
+                                                        <a href="index.html">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://vpn.ac/aff.php?aff=933">
+                                                            Pricing
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://vpn.ac/aff.php?aff=933">
+                                                            FAQs
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://vpn.ac/aff.php?aff=933">
+                                                            Support
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP Setup</a></li>
+                                                            <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- <li class="dropdown dropdown-mega">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <div class="dropdown-mega-content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Windows</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP Setup</a></li>
+                                                                                <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 2</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-buttons.html">Buttons</a></li>
+                                                                                <li><a href="shortcodes-labels.html">Labels</a></li>
+                                                                                <li><a href="shortcodes-lists.html">Lists</a></li>
+                                                                                <li><a href="shortcodes-image-gallery.html">Image Gallery</a></li>
+                                                                                <li><a href="shortcodes-image-frames.html">Image Frames</a></li>
+                                                                                <li><a href="shortcodes-testimonials.html">Testimonials</a></li>
+                                                                                <li><a href="shortcodes-blockquotes.html">Blockquotes</a></li>
+                                                                                <li><a href="shortcodes-word-rotator.html">Word Rotator</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 3</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-call-to-action.html">Call to Action</a></li>
+                                                                                <li><a href="shortcodes-pricing-tables.html">Pricing Tables</a></li>
+                                                                                <li><a href="shortcodes-tables.html">Tables</a></li>
+                                                                                <li><a href="shortcodes-progressbars.html">Progress Bars</a></li>
+                                                                                <li><a href="shortcodes-counters.html">Counters</a></li>
+                                                                                <li><a href="shortcodes-sections-parallax.html">Sections &amp; Parallax</a></li>
+                                                                                <li><a href="shortcodes-tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+                                                                                <li><a href="shortcodes-sticky-elements.html">Sticky Elements</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 4</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-headings.html">Headings</a></li>
+                                                                                <li><a href="shortcodes-dividers.html">Dividers</a></li>
+                                                                                <li><a href="shortcodes-animations.html">Animations</a></li>
+                                                                                <li><a href="shortcodes-medias.html">Medias</a></li>
+                                                                                <li><a href="shortcodes-maps.html">Maps</a></li>
+                                                                                <li><a href="shortcodes-arrows.html">Arrows</a></li>
+                                                                                <li><a href="shortcodes-alerts.html">Alerts</a></li>
+                                                                                <li><a href="shortcodes-posts.html">Posts</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    -->
+                                                    <li class="">
+                                                        <a class="" href="https://vpn.ac/aff.php?aff=933">
+                                                            VPN.ac login
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="" href="https://vpn.ac/aff.php?aff=933">
+                                                            Buy Now
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div role="main" class="main">
+
+                <section class="page-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li><a href="https://www.magnumvpn.com">Home</a></li>
+                                    <li class="active">Privacy Policy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Privacy Policy</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+<style>
+#ppBody
+{
+    font-size:11pt;
+    width:100%;
+    margin:0 auto;
+    text-align:justify;
+}
+
+#ppHeader
+{
+    font-family:verdana;
+    font-size:21pt;
+    width:100%;
+    margin:0 auto;
+}
+
+.ppConsistencies
+{
+    display:none;
+}
+</style><div id='ppHeader'>https://www.magnumvpn.com Privacy Policy</div><div id='ppBody'><div class='ppConsistencies'><div class='col-2'>
+            <div class="quick-links text-center">Information Collection</div>
+        </div><div class='col-2'>
+            <div class="quick-links text-center">Information Usage</div>
+        </div><div class='col-2'>
+            <div class="quick-links text-center">Information Protection</div>
+        </div><div class='col-2'>
+            <div class="quick-links text-center">Cookie Usage</div>
+        </div><div class='col-2'>
+            <div class="quick-links text-center">3rd Party Disclosure</div>
+        </div><div class='col-2'>
+            <div class="quick-links text-center">3rd Party Links</div>
+        </div><div class='col-2'></div></div><div style='clear:both;height:10px;'></div><div class='ppConsistencies'><div class='col-2'>
+            <div class="col-12 quick-links2 gen-text-center">Google AdSense</div>
+        </div><div class='col-2'>
+            <div class="col-12 quick-links2 gen-text-center">
+                    Fair Information Practices
+                    <div class="col-8 gen-text-left gen-xs-text-center" style="font-size:12px;position:relative;left:20px;">Fair information<br> Practices</div>
+                </div>
+        </div><div class='col-2'>
+            <div class="col-12 quick-links2 gen-text-center coppa-pad">
+                    COPPA
+
+                </div>
+        </div><div class='col-2'>
+            <div class="col-12 quick-links2 quick4 gen-text-center caloppa-pad">
+                    CalOPPA
+
+                </div>
+        </div><div class='col-2'>
+            <div class="quick-links2 gen-text-center">Our Contact Information<br></div>
+        </div></div><div style='clear:both;height:10px;'></div>
+<div class='innerText'>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.<br></div><span id='infoCo'></span><br><div class='grayText'><strong>What personal information do we collect from the people that visit our website?</strong></div><br /><div class='innerText'>When leaving a comment on our site, as appropriate, you may be asked to enter your name, email address  or other details to help you with your experience.</div><br><div class='grayText'><strong>When do we collect information?</strong></div><br /><div class='innerText'>We collect information from you when you subscribe to a newsletter, fill out a form to leave a comment on our site.</div><br>Provide us with feedback on our products or services  <span id='infoUs'></span><br><div class='grayText'><strong>How do we use your information? </strong></div><br /><div class='innerText'> We may use the information we collect from you when you leave a comment, sign up for our newsletter, respond to a survey or marketing communication, surf the website.  When you leave a comment, we will publicly show that comment on our website.</div><span id='infoPro'></span><br><div class='grayText'><strong>How do we protect your information?</strong></div><br /><div class='innerText'>We do not use ask for or store any credit card information.</div><div class='innerText'>We only provide articles and information. We never ask for credit card numbers.</div><div class='innerText'>Comments are made available to the public on the website, in addition, all information you supply is encrypted via Secure Socket Layer (SSL) technology. </div><br><div class='innerText'>We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information.</div><br><span id='coUs'></span><br><div class='grayText'><strong>Do we use 'cookies'?</strong></div><br /><div class='innerText'>Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</div><div class='innerText'><br><strong>We use cookies to:</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Understand and save user's preferences for future visits.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We never use third-party services that track this information on our behalf.  All of the traffic interactions are tracked on our own servers with open source analytics software.</div><div class='innerText'><br>You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser's Help Menu to learn the correct way to modify your cookies.<br></div><br><div class='innerText'>If you turn cookies off, Some of the features that make your site experience more efficient may not function properly.It won't affect the user's experience that make your site experience more efficient and may not function properly.</div><br><span id='trDi'></span><br><div class='grayText'><strong>Third-party disclosure</strong></div><br /><div class='innerText'>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information.</div><span id='trLi'></span><br><div class='grayText'><strong>Third-party links</strong></div><br /><div class='innerText'>Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</div><span id='gooAd'></span><br><div class='blueText'><strong>Google</strong></div><br /><div class='innerText'>We have NOT enabled Google AdSense or Google Analytics on our site.</div><span id='calOppa'></span><br><div class='blueText'><strong>California Online Privacy Protection Act</strong></div><br /><div class='innerText'>CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy.  The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared. -  See more at: http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf<br></div><div class='innerText'><br><strong>According to CalOPPA, we agree to the following:</strong><br></div><div class='innerText'>Users can visit our site anonymously.</div><div class='innerText'>Once this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant page after entering our website.<br></div><div class='innerText'>Our Privacy Policy link includes the word 'Privacy' and can easily be found on the page specified above.</div><div class='innerText'><br>You will be notified of any Privacy Policy changes:</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> On our Privacy Policy Page<br></div><div class='innerText'>Can change your personal information:</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> By emailing us</div><div class='innerText'><br><strong>How does our site handle Do Not Track signals?</strong><br></div><div class='innerText'>We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place. </div><div class='innerText'><br><strong>Does our site allow third-party behavioral tracking?</strong><br></div><div class='innerText'>It's also important to note that we do not allow third-party behavioral tracking</div><span id='coppAct'></span><br><div class='blueText'><strong>COPPA (Children Online Privacy Protection Act)</strong></div><br /><div class='innerText'>When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control.  The Federal Trade Commission, United States' consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.<br><br></div><div class='innerText'>We do not specifically market to children under the age of 13 years old.</div><div class='innerText'>Do we let third-parties, including ad networks or plug-ins collect PII from children under 13?</div><span id='ftcFip'></span><br><div class='blueText'><strong>Fair Information Practices</strong></div><br /><div class='innerText'>The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.<br><br></div><div class='innerText'><strong>In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:</strong></div><div class='innerText'>We will notify you via email</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Within 7 business days</div><div class='innerText'><br>We also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government agencies to investigate and/or prosecute non-compliance by data processors.</div><span id='canSpam'></span><br><div class='blueText'><strong>CAN SPAM Act</strong></div><br /><div class='innerText'>The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.<br><br></div><div class='innerText'><strong>We collect your email address in order to:</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Market to our mailing list or continue to send emails to our clients after the original transaction has occurred.</div><div class='innerText'><br><strong>To be in accordance with CANSPAM, we agree to the following:</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Not use false or misleading subjects or email addresses.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Identify the message as an advertisement in some reasonable way.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Include the physical address of our business or site headquarters.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Monitor third-party email marketing services for compliance, if one is used.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Honor opt-out/unsubscribe requests quickly.</div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Allow users to unsubscribe by using the link at the bottom of each email.</div><div class='innerText'><strong><br>If at any time you would like to unsubscribe from receiving future emails, you can email us at</strong></div><div class='innerText'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&bull;</strong> Follow the instructions at the bottom of each email.</div> and we will promptly remove you from <strong>ALL</strong> correspondence.</div><br><span id='ourCon'></span><br><div class='blueText'><strong>Contacting Us</strong></div><br /><div class='innerText'>If there are any questions regarding this privacy policy, you may contact us using the information below.<br><br></div><div class='innerText'>https://www.magnumvpn.com</div>Cave Creek, AZ 85331 <div class='innerText'>USA</div><div class='innerText'>sales@magnumvpn.com</div><div class='innerText'>(480) 800-4763</div><div class='innerText'><br>Last Edited on 2017-07-10</div></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="call-to-action call-to-action-default with-button-arrow call-to-action-in-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="call-to-action-content">
+                                <h3>VPN service that is <strong>fast</strong> and makes you <strong>anonymous</strong> while you surf the web!</h3>
+                                <p>Protect your <strong>Privacy</strong> and shield yourself from prying eyes with our guides.</p>
+                            </div>
+                            <div class="call-to-action-btn">
+                                <a href="https://vpn.ac/aff.php?aff=933" target="_blank" class="btn btn-lg btn-primary">Buy Now!</a><span class="arrow hlb hidden-xs hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -12px;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-ribbon">
+                            <span>Get in Touch</span>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="newsletter">
+                                <h4>Newsletter</h4>
+                                <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+            
+                                <div class="alert alert-success hidden" id="newsletterSuccess">
+                                    <strong>Success!</strong> You've been added to our email list.
+                                </div>
+            
+                                <div class="alert alert-danger hidden" id="newsletterError"></div>
+            
+                                <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">Go!</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Latest News</h4>
+                            <div id="tweet" class="twitter manual" data-plugin-tweets data-plugin-options="{'username': '', 'count': 2}">
+                                <a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/MagnumVPN">Tweets by MagnumVPN</a> 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-details">
+                                <h4>Contact Us</h4>
+                                <ul class="contact">
+                                    <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Arizona, USA</p></li>
+                                    <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <a href="tel:+14808004763">(480) 800-4763</a></p></li>
+                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:sales@magnumvpn.com">sales@magnumvpn.com</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Follow Us</h4>
+                            <ul class="social-icons">
+                                <!-- <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <!-- <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="index.html" class="logo">
+                                    <img alt="MagnumVPN Logo"  src="/img/logos/png/white_logo_color_background_centercut_very_small_060606.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <nav id="sub-menu">
+                                    <ul>
+                                        <li><a href="https://vpn.ac/aff.php?aff=933">FAQ's</a></li>
+                                        <li><a href="https://www.magnumvpn.com/sitemap.html">Sitemap</a></li>
+                                        <li><a href="https://www.magnumvpn.com/contact-us.html">Contact</a></li>
+                                        <li><a href="https://www.magnumvpn.com/privacy_policy.html">Privacy Policy</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>        </div>
+
+        <!-- Vendor -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/vendor/common/common.min.js"></script>
+        <script src="/vendor/jquery.validation/jquery.validation.min.js"></script>
+        <script src="/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+        <script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+        <script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+        <script src="/vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="/vendor/vide/vide.min.js"></script>
+        
+        <!-- Theme Base, Components and Settings -->
+        <script src="/js/theme.js"></script>
+        
+        <!-- Current Page Vendor and Views -->
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+        <script src="/js/views/view.home.js"></script>
+        
+        <!-- Theme Custom -->
+        <!--<script src="/js/custom.js"></script>-->
+        
+        <!-- Theme Initialization Files -->
+        <script src="/js/theme.init.js"></script>
+
+
+    </body>
+</html>

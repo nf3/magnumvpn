@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <title>Windows 10 </title>  
+
+        <meta name="keywords" content="Windows 10" />
+        <meta name="description" content="Windows 10">
+        
+        <link rel="canonical" href="https://www.magnumvpn.com/category/windows-10.html"/>
+
+        <meta name="author" content="MagnumVPN">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="How to set up L2TP VPN on Windows 10">
+
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Web Fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+        <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="/css/theme.css">
+        <link rel="stylesheet" href="/css/theme-elements.css">
+        <link rel="stylesheet" href="/css/theme-blog.css">
+        <link rel="stylesheet" href="/css/theme-shop.css">
+
+        <!-- Current Page CSS -->
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+        <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+        <link rel="stylesheet" href="/vendor/circle-flip-slideshow/css/component.css">
+
+
+        <!-- Skin CSS -->
+        <link rel="stylesheet" href="/css/skins/default.css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="/css/custom.css">
+
+        <!-- Head Libs -->
+        <script src="/vendor/modernizr/modernizr.min.js"></script>
+
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//stats.magnumvpn.com/";
+            _paq.push(['setTrackerUrl', u+'js/']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+    </head>
+    <body>
+        <div class="body">
+            <header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': true}">
+                <div class="header-body">
+                    <div class="header-container container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-logo">
+                                    <a href="https://www.magnumvpn.com/index.html">
+                                        <img alt="Porto" width="112" height="80" data-sticky-width="83" data-sticky-height="59" data-sticky-top="33" src="/img/logos/png/dark_logo_transparent_background_biggerTag_small.png">
+                                        <!-- <img alt="Porto" width="263" height="188" data-sticky-width="131" data-sticky-height="94" data-sticky-top="33" src=""> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <!--
+                                    <div class="header-search hidden-xs">
+                                        <form id="searchForm" action="page-search-results.html" method="get">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    -->
+                                    <nav class="header-nav-top">
+                                        <ul class="nav nav-pills">
+                                            <li class="hidden-xs">
+                                                <a href="/aboutus.html"><i class="fa fa-angle-right"></i> About Us</a>
+                                            </li>
+                                            <li class="hidden-xs">
+                                                <a href="/contact-us.html"><i class="fa fa-angle-right"></i> Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <span class="ws-nowrap"><i class="fa fa-phone"></i><a href="tel:+14808004763"> (480) 800-4763</a></span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-row">
+                                    <div class="header-nav">
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                        <ul class="header-social-icons social-icons hidden-xs">
+                                            <!-- <li class="social-icons-facebook"><a href="https://www.facebook.com/MagnumVPN/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                            <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <!-- <li class="social-icons-linkedin"><a href="https://www.linkedin.com/company/prompt-engineering-usa" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                                        </ul>
+                                        <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+                                            <nav>
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/index.html">
+                                                            Home
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/checkout.html"> <!-- <a href="https://vpn.ac/aff.php?aff=933"> -->
+                                                            Pricing
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="https://vpn.ac/aff.php?aff=933">
+                                                            FAQs
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/why-do-i-need-a-vpn.html">Why do I Need a VPN?</a></li>
+                                                            <li><a href="/how-to-view-cookies-in-chrome.html">How to View Cookies in Chrome?</a></li>
+                                                            <li><a href="/vpn-providers.html">10 criteria to choose a VPN Provider</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://vpn.ac/aff.php?aff=933">
+                                                            Support
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="/powershell_auto_connect_vpn.html">Powershell VPN Auto Connect</a></li>
+                                                            <li><a href="/setup-vpn-android-l2tp-ipsec.html">Android 7.0 L2TP VPN Setup</a></li>
+                                                            <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP VPN Setup</a></li>
+                                                            <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- <li class="dropdown dropdown-mega">
+                                                        <a class="dropdown-toggle" href="#">
+                                                            Guides
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <div class="dropdown-mega-content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Windows</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="/setup-vpn-windows-10-l2tp-ipsec.html">Windows 10 L2TP Setup</a></li>
+                                                                                <li><a href="/setup-windows-10-firewall-l2tp.html">Windows 10 Firewall L2TP</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 2</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-buttons.html">Buttons</a></li>
+                                                                                <li><a href="shortcodes-labels.html">Labels</a></li>
+                                                                                <li><a href="shortcodes-lists.html">Lists</a></li>
+                                                                                <li><a href="shortcodes-image-gallery.html">Image Gallery</a></li>
+                                                                                <li><a href="shortcodes-image-frames.html">Image Frames</a></li>
+                                                                                <li><a href="shortcodes-testimonials.html">Testimonials</a></li>
+                                                                                <li><a href="shortcodes-blockquotes.html">Blockquotes</a></li>
+                                                                                <li><a href="shortcodes-word-rotator.html">Word Rotator</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 3</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-call-to-action.html">Call to Action</a></li>
+                                                                                <li><a href="shortcodes-pricing-tables.html">Pricing Tables</a></li>
+                                                                                <li><a href="shortcodes-tables.html">Tables</a></li>
+                                                                                <li><a href="shortcodes-progressbars.html">Progress Bars</a></li>
+                                                                                <li><a href="shortcodes-counters.html">Counters</a></li>
+                                                                                <li><a href="shortcodes-sections-parallax.html">Sections &amp; Parallax</a></li>
+                                                                                <li><a href="shortcodes-tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+                                                                                <li><a href="shortcodes-sticky-elements.html">Sticky Elements</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span class="dropdown-mega-sub-title">Shortcodes 4</span>
+                                                                            <ul class="dropdown-mega-sub-nav">
+                                                                                <li><a href="shortcodes-headings.html">Headings</a></li>
+                                                                                <li><a href="shortcodes-dividers.html">Dividers</a></li>
+                                                                                <li><a href="shortcodes-animations.html">Animations</a></li>
+                                                                                <li><a href="shortcodes-medias.html">Medias</a></li>
+                                                                                <li><a href="shortcodes-maps.html">Maps</a></li>
+                                                                                <li><a href="shortcodes-arrows.html">Arrows</a></li>
+                                                                                <li><a href="shortcodes-alerts.html">Alerts</a></li>
+                                                                                <li><a href="shortcodes-posts.html">Posts</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    -->
+                                                    <li class="">
+                                                        <a class="" href="https://vpn.ac/aff.php?aff=933">
+                                                            VPN.ac login
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="https://www.magnumvpn.com/checkout.html"> <!-- <a class="" href="https://vpn.ac/aff.php?aff=933"> -->
+                                                            Buy Now
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div role="main" class="main">
+
+                <section class="page-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li><a href="https://www.magnumvpn.com">Home</a></li>
+                                    <li class="active">Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Windows 10</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+
+                    
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="blog-posts">
+
+
+                                <article class="post post-medium">
+                                    <div class="row">
+
+                                        <div class="col-md-5">
+                                            <div class="post-image">
+                                                <div>
+                                                    <div class="img-thumbnail">
+                                                        <img class="img-responsive" src="/img/blog/powershell_auto_connect_vpn/powershell_auto_840x380.png" alt="">
+                                                    </div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+
+                                            <div class="post-content">
+
+                                                <h2><a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html">Powershell script to auto connect to your VPN on startup</a></h2>
+                                                <p><p>Simple Powershell script that will automatically connect to your VPN on startup and reconnect if it gets disconnected.</p></p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="post-meta">
+                                                <span><i class="fa fa-calendar"></i> Jul 24, 2017 </span>
+                                                <span><i class="fa fa-user"></i> By <a href="https://www.magnumvpn.com/author/neil-proctor.html">Neil Proctor</a> </span>
+                                                <span> Tags: <a href="https://www.magnumvpn.com/tag/vpn.html">vpn</a>, <a href="https://www.magnumvpn.com/tag/win10.html">win10</a>, <a href="https://www.magnumvpn.com/tag/powershell.html">powershell</a>, <a href="https://www.magnumvpn.com/tag/startup.html">startup</a>,   </span>
+                                                <span><i class="fa fa-comments"></i> <a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html#isso-thread" data-isso-id="powershell_auto_connect_vpn">Comments</a></span>
+                                                <a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html" class="btn btn-xs btn-primary pull-right">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                                <article class="post post-medium">
+                                    <div class="row">
+
+                                        <div class="col-md-5">
+                                            <div class="post-image">
+                                                <div>
+                                                    <div class="img-thumbnail">
+                                                        <img class="img-responsive" src="/img/blog/setup-windows-10-firewall-l2tp/firewall-main.png" alt="">
+                                                    </div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+
+                                            <div class="post-content">
+
+                                                <h2><a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html">How to Setup Windows 10 Firewall for L2TP/IPSec</a></h2>
+                                                <p><p>Setup guide for Windows 10 firewall to allow L2TP/IPSec VPN connections without an error</p></p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="post-meta">
+                                                <span><i class="fa fa-calendar"></i> Jun 20, 2017 </span>
+                                                <span><i class="fa fa-user"></i> By <a href="https://www.magnumvpn.com/author/neil-proctor.html">Neil Proctor</a> </span>
+                                                <span> Tags: <a href="https://www.magnumvpn.com/tag/vpn.html">vpn</a>, <a href="https://www.magnumvpn.com/tag/win10.html">win10</a>, <a href="https://www.magnumvpn.com/tag/l2tp.html">l2tp</a>, <a href="https://www.magnumvpn.com/tag/setup.html">setup</a>, <a href="https://www.magnumvpn.com/tag/firewall.html">firewall</a>,   </span>
+                                                <span><i class="fa fa-comments"></i> <a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html#isso-thread" data-isso-id="setup-windows-10-firewall-l2tp">Comments</a></span>
+                                                <a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html" class="btn btn-xs btn-primary pull-right">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                                <article class="post post-medium">
+                                    <div class="row">
+
+                                        <div class="col-md-5">
+                                            <div class="post-image">
+                                                <div>
+                                                    <div class="img-thumbnail">
+                                                        <img class="img-responsive" src="/img/blog/setup-vpn-windows-10-l2tp-ipsec/l2tp-win10_840x380.png" alt="">
+                                                    </div>
+                                                </div>
+                                                                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+
+                                            <div class="post-content">
+
+                                                <h2><a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">How to Setup VPN on Windows 10 L2TP/IPSec</a></h2>
+                                                <p><p>Protect your internet privacy with this step-by-step guide on set up of L2TP VPN service on Windows 10</p></p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="post-meta">
+                                                <span><i class="fa fa-calendar"></i> Jun 15, 2017 </span>
+                                                <span><i class="fa fa-user"></i> By <a href="https://www.magnumvpn.com/author/neil-proctor.html">Neil Proctor</a> </span>
+                                                <span> Tags: <a href="https://www.magnumvpn.com/tag/vpn.html">vpn</a>, <a href="https://www.magnumvpn.com/tag/win10.html">win10</a>, <a href="https://www.magnumvpn.com/tag/l2tp.html">l2tp</a>, <a href="https://www.magnumvpn.com/tag/setup.html">setup</a>,   </span>
+                                                <span><i class="fa fa-comments"></i> <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html#isso-thread" data-isso-id="setup-vpn-windows-10-l2tp-ipsec">Comments</a></span>
+                                                <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html" class="btn btn-xs btn-primary pull-right">Read more...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">                            <aside class="sidebar">
+                            
+                                <!--
+                                <form>
+                                    <div class="input-group input-group-lg">
+                                        <input class="form-control" placeholder="Search..." name="s" id="s" type="text">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+
+                            
+                                <hr>
+                                -->
+
+                                <h4 class="heading-primary">Categories</h4>
+                                <ul class="nav nav-list mb-xlg">
+                                    <li ><a href="https://www.magnumvpn.com/category/android.html">Android (1)</a></li>
+                                        <ul>
+                                            <li ><a href="https://www.magnumvpn.com/setup-vpn-android-l2tp-ipsec.html">How to Setup VPN on Android L2TP/IPSec (7.0 Nougat)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li ><a href="https://www.magnumvpn.com/category/blog.html">Blog (1)</a></li>
+                                        <ul>
+                                            <li ><a href="https://www.magnumvpn.com/vpn-providers.html">10 criteria to choose a VPN Provider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li ><a href="https://www.magnumvpn.com/category/faq.html">FAQ (2)</a></li>
+                                        <ul>
+                                            <li ><a href="https://www.magnumvpn.com/why-do-i-need-a-vpn.html">Why do I need a VPN?</a></li>
+                                            <li ><a href="https://www.magnumvpn.com/how-to-view-cookies-in-chrome.html">How to view cookies in Chrome</a></li>
+                                        </ul>
+                                    </li>
+                                    <li ><a href="https://www.magnumvpn.com/category/windows-10.html">Windows 10 (3)</a></li>
+                                        <ul>
+                                            <li ><a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html">Powershell script to auto connect to your VPN on startup</a></li>
+                                            <li ><a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html">How to Setup Windows 10 Firewall for L2TP/IPSec</a></li>
+                                            <li ><a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">How to Setup VPN on Windows 10 L2TP/IPSec</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            
+                                <div class="tabs mb-xlg">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#popularPosts" data-toggle="tab"><i class="fa fa-star"></i> Popular</a></li>
+                                        <li><a href="#recentPosts" data-toggle="tab">Recent</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="popularPosts">
+                                            <ul class="simple-post-list">
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="https://www.magnumvpn.com/vpn-providers.html">
+                                                                <img src="/img/blog/vpn-providers/choice_50x50.png" alt="">
+                                                            </a>                                                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="https://www.magnumvpn.com/vpn-providers.html">10 criteria to choose a VPN Provider</a>
+                                                        <div class="post-meta">
+                                                             Sep 11, 2017
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">
+                                                                <img src="/img/blog/setup-vpn-windows-10-l2tp-ipsec/l2tp-win10-only_50x50.png" alt="">
+                                                            </a>                                                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">How to Setup VPN on Windows 10 L2TP/IPSec</a>
+                                                        <div class="post-meta">
+                                                             Jun 15, 2017
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" id="recentPosts">
+                                            <ul class="simple-post-list">
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html">
+                                                                <img src="/img/blog/powershell_auto_connect_vpn/powershell_auto_50x50.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="https://www.magnumvpn.com/powershell_auto_connect_vpn.html">Powershell script to auto connect to your VPN on startup</a>
+                                                        <div class="post-meta">
+                                                             Jul 24, 2017
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html">
+                                                                <img src="/img/blog/setup-windows-10-firewall-l2tp/firewall-50x50.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="https://www.magnumvpn.com/setup-windows-10-firewall-l2tp.html">How to Setup Windows 10 Firewall for L2TP/IPSec</a>
+                                                        <div class="post-meta">
+                                                             Jun 20, 2017
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">
+                                                                <img src="/img/blog/setup-vpn-windows-10-l2tp-ipsec/l2tp-win10-only_50x50.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="https://www.magnumvpn.com/setup-vpn-windows-10-l2tp-ipsec.html">How to Setup VPN on Windows 10 L2TP/IPSec</a>
+                                                        <div class="post-meta">
+                                                             Jun 15, 2017
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <hr>
+                            
+                                <h4 class="heading-primary">About Us</h4>
+                                <p>We are VPN experts with a passion for privacy, with all the choices and options available to protect your privacy we have curated the best.  We are an affiliate partner with VPN.ac, they have the best service we have tested so far and we are part of their referral network.</p>
+                            
+                            </aside></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-ribbon">
+                            <span>Get in Touch</span>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="newsletter">
+                                <h4>Newsletter</h4>
+                                <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+            
+                                <div class="alert alert-success hidden" id="newsletterSuccess">
+                                    <strong>Success!</strong> You've been added to our email list.
+                                </div>
+            
+                                <div class="alert alert-danger hidden" id="newsletterError"></div>
+            
+                                <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">Go!</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Latest News</h4>
+                            <div id="tweet" class="twitter manual" data-plugin-tweets data-plugin-options="{'username': '', 'count': 2}">
+                                <a class="twitter-timeline" data-height="400" data-theme="dark" href="http://twitter.com/MagnumVPN">Tweets by MagnumVPN</a> 
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-details">
+                                <h4>Contact Us</h4>
+                                <ul class="contact">
+                                    <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> Arizona, USA</p></li>
+                                    <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> <a href="tel:+14808004763">(480) 800-4763</a></p></li>
+                                    <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:sales@magnumvpn.com">sales@magnumvpn.com</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Follow Us</h4>
+                            <ul class="social-icons">
+                                <!-- <li class="social-icons-facebook"><a href="https://www.facebook.com/MagnumVPN/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li> -->
+                                <li class="social-icons-twitter"><a href="http://twitter.com/MagnumVPN" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <!-- <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="https://www.magnumvpn.com/index.html" class="logo">
+                                    <img alt="MagnumVPN Logo"  src="/img/logos/png/white_logo_color_background_centercut_very_small_060606.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <p>&copy; Copyright 2017. All Rights Reserved.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <nav id="sub-menu">
+                                    <ul>
+                                        <li><a href="https://vpn.ac/aff.php?aff=933">FAQ's</a></li>
+                                        <li><a href="https://www.magnumvpn.com/sitemap.html">Sitemap</a></li>
+                                        <li><a href="https://www.magnumvpn.com/contact-us.html">Contact</a></li>
+                                        <li><a href="https://www.magnumvpn.com/privacy_policy.html">Privacy Policy</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>        </div>
+
+        <!-- Vendor -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/vendor/common/common.min.js"></script>
+        <script src="/vendor/jquery.validation/jquery.validation.min.js"></script>
+        <script src="/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+        <!-- <script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script> -->
+        <script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+        <script src="/vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="/vendor/vide/vide.min.js"></script>
+        
+        <!-- Theme Base, Components and Settings -->
+        <script src="/js/theme.js"></script>
+        
+        <!-- Current Page Vendor and Views -->
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+        <script src="/js/views/view.home.js"></script>
+        
+        <!-- Theme Custom -->
+        <!--<script src="/js/custom.js"></script>-->
+        
+        <!-- Theme Initialization Files -->
+        <script src="/js/theme.init.js"></script>
+
+
+    </body>
+</html>
