@@ -69,7 +69,7 @@ h4.custom-font-style-1 {
 .borderhighlight {
 
     /*outline: 4px dashed #f1592a ; */
-    border: 4px solid #f58422;
+    border: 4px solid #f1592a;
 
     padding-right: 0px;
     padding-left: 0px;
@@ -96,7 +96,7 @@ ul.list-center-but-left {
 }
 
 .check-selected {
-    color: #f58422;
+    color: #f1592a;
     text-shadow: 1px 1px 1px #ccc;
     font-size: 2.5em;
 }
@@ -105,8 +105,4 @@ ul.list-center-but-left {
     text-align: left;
     color: white;
     padding-left: 30px;
-}
-
-#header .header-container {
-        background-image: url("/img/yoga/png/2nd-top-header_02.png");
 }

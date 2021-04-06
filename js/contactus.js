@@ -11,7 +11,7 @@ $("#contactForm").submit(function(e) {
            contentType: "application/json; charset=utf-8",
            success: function(data)
            {
-               alert("Thanks for the comment!"); // show response from the php script.
+               alert(data); // show response from the php script.
                $('#contactForm').trigger("reset");
            }
          });
